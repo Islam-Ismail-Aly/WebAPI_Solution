@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebAPI_Lab2</name>
+    </assembly>
+    <members>
+        <member name="M:WebAPI_Lab2.Controllers.StudentController.GetAllStudents">
+            <summary>
+            Retrieves all students with department and supervisor details.
+            </summary>
+            <returns>A list of students.</returns>
+        </member>
+        <member name="M:WebAPI_Lab2.Controllers.StudentController.GetStudentById(System.Int32)">
+            <summary>
+            Retrieves a single student by their ID.
+            </summary>
+            <param name="id">The ID of the student to retrieve.</param>
+            <returns>A student DTO if found; otherwise, NotFound result.</returns>
+        </member>
+        <member name="M:WebAPI_Lab2.Controllers.StudentController.EditStudent(System.Int32,WebAPI_Lab2.Models.Student)">
+            <summary>
+            Updates a student's details.
+            </summary>
+            <param name="id">The ID of the student to update.</param>
+            <param name="student">The updated student data.</param>
+            <returns>A NoContent result if successful; otherwise, appropriate error status.</returns>
+        </member>
+        <member name="M:WebAPI_Lab2.Controllers.StudentController.AddStudent(WebAPI_Lab2.Models.Student)">
+            <summary>
+            Adds a new student to the database.
+            </summary>
+            <param name="student">The student to add.</param>
+            <returns>The created student with action to retrieve it by ID.</returns>
+        </member>
+        <member name="M:WebAPI_Lab2.Controllers.StudentController.DeleteStudentById(System.Int32)">
+            <summary>
+            Deletes a student by their ID.
+            </summary>
+            <param name="id">The ID of the student to delete.</param>
+            <returns>A NoContent result if successful; otherwise, NotFound result.</returns>
+        </member>
+    </members>
+</doc>
